@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 面談アプリのカスタムスタイル */
+body {
+  background-color: #f8fafc;
+}
+
+/* 柔らかい水色基調のスタイル */
+.primary-button {
+  @apply bg-primary-500 hover:bg-primary-600 text-white font-medium py-2 px-4 rounded-soft transition-colors duration-200;
+}
+
+.secondary-button {
+  @apply bg-primary-100 hover:bg-primary-200 text-primary-700 font-medium py-2 px-4 rounded-soft transition-colors duration-200;
+}
+
+.danger-button {
+  @apply bg-red-500 hover:bg-red-600 text-white font-medium py-2 px-4 rounded-soft transition-colors duration-200;
+}
+
+.input-field {
+  @apply w-full px-3 py-2 border border-primary-200 rounded-soft focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent;
+}
+
+.card {
+  @apply bg-white rounded-soft shadow-sm border border-primary-100;
+}
+
+.sidebar {
+  @apply bg-primary-50 border-r border-primary-200;
+}
